@@ -3,6 +3,9 @@ version '1.0'
 
 buildscript {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' } // Google
+        maven { url 'https://maven.aliyun.com/repository/public' }  // JCenter
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' } // Gradle Plugin
         google()
         mavenCentral()
         maven {url 'https://developer.huawei.com/repo/'}
@@ -15,6 +18,8 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
         google()
         mavenCentral()
         maven {url 'https://developer.huawei.com/repo/'}
